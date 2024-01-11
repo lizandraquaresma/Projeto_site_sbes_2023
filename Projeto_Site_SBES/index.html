@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="_img/logo-sbc.png" type="image/x-icon">
+
+    <!--Titulo-->
+    <title>Simpósio Brasileiro de Eng. de Software</title>
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="_css/style.css" />
+    <link rel="stylesheet" href="_css/footer.css">
+    <link rel="stylesheet" href="_css/slide.css">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+    <!--Estilos Exportados-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!--Script-->
+    <script src="javascript/jscript.js"></script>
+    <script src="javascript/slide.js"></script>
+
+</head>  
+
+<body>
+    <!--Cabecalho-->
+    <header id="cabecalho">
+        <img class="img-cabecalho" src="_img/logo-sbc.png">
+        <!--Menu-->
+        <nav class="menu">
+            <a class="menu-item" href="index.html">Home</a>
+            <a class="menu-item" href="programacao.html">Programação</a>
+            <a class="menu-item" href="palestrantes.html">Palestrantes</a>
+            <a class="menu-item" href="noticias/theme/index.html">Notícias</a>
+            <a class="menu-item" href="subscriber.html">Inscreva-se</a>
+            <a class="menu-item" href="login.html">Login</a>
+        </nav>
+
+    </header>
+    <!--Conteudo Principal-->
+    <main id="conteudo-principal">
+        <section class="principal">
+            <div id="edition-description">
+                <p>XX</p>
+            </div>
+            <div id="edition-year">
+                <p>E</p>
+                <p>D</p>
+                <p>I</p>
+                <p>Ç</p>
+                <p>Ã</p>
+                <p>O</p>
+
+            </div>
+            <div id="event-description">
+                <p class="line-1">Simpósio Brasileiro de</p>
+                <p class="line-2">Engenharia de Software</p>
+            </div>
+        </section>
+        <!--letreiro menor-->
+        <section id="rodape-description">
+            <!--Localização do evento-->
+            <div id="event-date">
+                <p>5 a 9 de junho de 2023</p>
+            </div>
+            <div id="event-localization">
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path
+                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                    </svg> UEPA - Centro de Ciências Biológicas e da Saúde<br>Tv. Perebebuí, 2623 - Marco, Belém - PA,
+                    66087-662
+                </p>
+            </div>
+            <!--Botão rolagem de tela-->
+            <div id="botao">
+                <button class="btn-saiba" onclick="btn(window.location.href='subscriber.html')">Quero participar!</button>
+                <!--<a class="menu-item" href="subscriber.html"></a>-->
+            </div>
+        </section>
+       
+    </main>
+   
+    <section class="slider">
+        <div class="slider-content">
+            
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img class="img-desktop1" src="_img/curso-dobro.jfif" alt="slide 1">
+                <img class="img-mobile" src="_img/slide-1-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop2" src="_img/inscricao.jfif" alt="slide 3">
+                <img class="img-mobile" src="_img/slide-2-mob.jpg" alt="slide 1">
+            </div>
+
+            <div class="slide-box">
+                <img class="img-desktop3" src="_img/devdobro.jfif" alt="slide 3">
+                <img class="img-mobile" src="_img/slide-3-mob.jpg" alt="slide 3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+    </section>
+ 
+<!--um pouco mais sobre o evento-->
+    <article id="context-geral">
+        <div class="titulo2">
+            <h1>Do que se trata o evento?</h1>
+        </div>
+        <div id="context-event">
+            <img class="img-palestra" src="_img/palestra.jpg" />
+            <div class="contexto">
+                <h2>Um pouco mais sobre o evento</h2>
+                <p>O Simpósio Brasileiro de Engenharia de Software (SBES) é o mais tradicional simpósio brasileiro da
+                    SBC na área de desenvolvimento de software.</p>
+                <p>Ao longo de suas 30 edições já realizadas, o SBES se consolidou como o mais importante evento
+                    técnico-científico na área de Engenharia de Software no Brasil, atraindo diversos participantes
+                    entre pesquisadores, estudantes e profissionais do país e do exterior.</p>
+                <p>Seus principais objetos de estudo são processos, métodos, técnicas e ferramentas para o
+                    desenvolvimento, manutenção e evolução de software.</p>
+
+            </div>
+        </div>
+    </article>
+
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <h2> Nossos contatos</h2>
+                <div class="content">
+                    <a href="https://api.whatsapp.com/send?phone=5551992526018&text=Oi%20SBC" target="_blank"
+                        rel="noopener noreferrer">
+                        <p>Whatsapp</p>
+                    </a>
+                    <a href="https://www.youtube.com/@sbcoficial" target="_blank" rel="noopener noreferrer">
+                        <p>Youtube</p>
+                    </a>
+                    <a href="https://www.instagram.com/sbcoficial/" target="_blank" rel="noopener noreferrer">
+
+                        <p>Instagram</p>
+                        <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+
+                            <p>SBC</p>
+
+                        </a>
+                        <a href="mailto:sbc@sbc.org.br" target="_blank" rel="noopener noreferrer">
+
+                            <p>email</p>
+                        </a>
+
+                </div>
+            </div>
+            <!--left box-->
+            <div class="center box">
+                <h2>Endereço</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker"></span>
+                        <a href="https://goo.gl/maps/j6RjXAZkMVPgZcVa6" target="_blank" rel="noopener noreferrer">
+                            <p>Av. Bento Gonçalves, 9500</p>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div>
+                    <p> Setor 4 | Prédio 43.412 | Sala 219 <br> Bairro Agronomia
+                        Caixa Postal 15012 <br> CEP 91501-970 Porto Alegre - RS</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

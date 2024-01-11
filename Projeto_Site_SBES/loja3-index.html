@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="_img/logo-sbc.png" type="image/x-icon">
+
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="_css/loja.css">
+    <link rel="stylesheet" href="_css/style.css">
+
+    <!--Script-->
+    <script src="javascript/loja3.js" async></script>
+    <script>alert("Formulário preenchido com sucesso!");</script>
+
+    <!--Titulo-->
+    <title>Carrinho de Compras</title>
+  </head>
+  <body>
+    <!--Cabecalho-->
+    <header id="cabecalho">
+        <img class="img-cabecalho" src="_img/logo-sbc.png">
+        <!--Menu-->
+        <nav class="menu">
+          <a class="menu-item" href="index.html">Home</a>
+          <a class="menu-item" href="programacao.html">Programação</a>
+          <a class="menu-item" href="palestrantes.html">Palestrantes</a>
+          <a class="menu-item" href="noticias/theme/index.html">Notícias</a>
+          <a class="menu-item" href="subscriber.html">Inscreva-se</a>
+          <a class="menu-item" href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main class="main-section">
+      <section class="container normal-section">
+        <h2 class="section-title">Cursos complementares</h2>
+
+        <div class="products-container">
+          <div class="movie-product">
+            <strong class="product-title">HTML 5</strong>
+           
+            <img src="_img/Cornmanthe3rd-Plex-Other-html-5.128.png" alt="curso 01" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$29,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">CSS 3</strong>
+           
+            <img src="_img/css-3.png" alt="Poster 2" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$39,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+  
+          <div class="movie-product">
+            <strong class="product-title">Python</strong>
+          
+            <img src="_img/Cornmanthe3rd-Plex-Other-python.128.png" alt="Poster 3" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$19,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+  
+          <div class="movie-product">
+            <strong class="product-title">Java</strong>
+           
+            <img src="_img/Tatice-Cristal-Intense-Java.128.png" alt="Poster 4" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">R$29,99</span>
+              <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!--Container do Carrinho-->
+      <section class="container normal-section">
+        <h2 class="section-title">Carrinho</h2>
+
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th class="table-head-item first-col">Item</th>
+              <th class="table-head-item second-col">Preço</th>
+              <th class="table-head-item third-col">Quantidade</th>
+            </tr>
+          </thead>
+          <!--Local onde é realizado o calculo do carrinho de compra(Não apagar)-->
+          <tbody>
+            <!-- <tr class="cart-product">
+              <td class="product-identification">
+                <img src="images/produto2.png" alt="Miniatura" class="cart-product-image">
+                <strong class="cart-product-title">Miniatura</strong>
+              </td>
+              <td>
+                <span class="cart-product-price">R$69,90</span>
+              </td>
+              <td>
+                <input type="number" value="2" min="0" class="product-qtd-input">
+                <button type="button" class="remove-product-button">Remover</button>
+              </td>
+            </tr>
+            <tr class="cart-product">
+              <td class="product-identification">
+                <img src="images/poster3.png" alt="Poster 3" class="cart-product-image">
+                <strong class="cart-product-title">Poster 3</strong>
+              </td>
+              <td>
+                <span class="cart-product-price">R$19,99</span>
+              </td>
+              <td>
+                <input type="number" value="1" min="0" class="product-qtd-input">
+                <button type="button" class="remove-product-button">Remover</button>
+              </td>
+            </tr> -->
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3" class="cart-total-container">
+                <strong>Total</strong>
+                <span>R$160,00</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <button type="button" class="purchase-button"> <a href="inscricao.php">Finalizar Compra</a></button>
+      </section>
+    </main>
+
+    
+  </body>
+</html>

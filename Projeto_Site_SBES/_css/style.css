@@ -1,0 +1,194 @@
+/*css principal*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&family=Titillium+Web&display=swap');
+
+/*css geral da pagina, utilizado para eliminar efeitos anteriores*/
+* {
+    font-family: 'Merriweather';
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* CSS do Corpo do site, onde é inserido o fundo com a imagem */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../_img/paisagem-fundo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+/*Cabecalho incluido em todas as telas*/
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+
+}
+
+.img-cabecalho {
+    height: 72px;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+
+}
+
+.menu-item {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+
+}
+/*css do main*/
+
+#conteudo-principal {
+    border-top: 0.025em solid rgb(255, 255, 255);
+    margin-top: -10px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#edition-description {
+    font-size: 100px;
+
+}
+
+#edition-year {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    align-items: center;
+    -webkit-text-stroke: 0.02375em;
+    -webkit-text-fill-color: transparent;
+}
+
+#event-date {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#event-localization {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4em;
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+    margin-bottom: 80px;
+    color: white;
+
+
+}
+
+.btn-saiba {
+    padding: .75rem 1.25rem;
+    color: green;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    cursor: pointer;
+
+
+}
+
+#context-geral {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../_img/imagem3.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.img-palestra {
+    margin-top: 20px;
+    width: 50%;
+    
+}
+
+#context-event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo2 {
+    background-color: #446637d9;
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.img-palestra {
+    height: 400px;
+}
+
+.contexto {
+    background-color: #44663798;
+    width: 500px;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contexto h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+
+.contexto p {
+    margin-bottom: 0.75em;
+    text-align: center;
+}
+/*Mobile*/
+@media (max-width: 450px){
+
+    /* Event Form*/
+    #conteudo-principal {
+        flex-direction: column;
+        height: auto;
+    }
+    .principal{
+        flex-direction: column;
+        width: 100%;
+    }
+   
+}
